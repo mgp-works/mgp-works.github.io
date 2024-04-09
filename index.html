@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aldry Nines</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
+    />
+
+    <style>
+      h2 {
+        color: whitesmoke;
+      }
+      body {
+        font-family: "Pirata One", cursive;
+      }
+
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        /* padding-top: 20px; */
+      }
+
+      .left {
+        left: 0;
+        background-color: #161616;
+      }
+
+      .right {
+        right: 0;
+        background-color: #161616;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      div {
+        background: #161616;
+        transition: background-color 0.5s ease-out 2ms;
+      }
+
+      div:hover {
+        background-color: #e0e0e0;
+      }
+
+      .square {
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg);
+        background-color: #00ff32;
+        position: absolute;
+        z-index: 2;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="square"></div>
+
+    <div class="split left">
+      <div class="centered">
+        <h2>projects</h2>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <h2>about</h2>
+      </div>
+    </div>
+  </body>
+</html>
