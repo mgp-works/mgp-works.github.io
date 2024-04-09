@@ -1,82 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aldry Nines</title>
-    <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MGP Works</title>
 
     <style>
-      h2 {
-        color: whitesmoke;
+      .container {
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        height: 100vh;
       }
-      body {
-        font-family: "Pirata One", cursive;
-      }
-
-      .split {
-        height: 100%;
-        width: 50%;
-        position: fixed;
-        z-index: 100;
-        top: 0;
-        overflow-x: hidden;
-        /* padding-top: 20px; */
-      }
-
-      .left {
-        left: 0;
-        background-color: #161616;
-      }
-
-      .right {
-        right: 0;
-        background-color: #161616;
-      }
-
-      .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      .container > div {
+        margin-bottom: 40px;
         text-align: center;
       }
-
-      div {
-        background: #161616;
-        transition: background-color 0.5s ease-out 2ms;
+      .image {
+        width: 100px;
+        height: auto;
+        margin-bottom: 40px;
       }
-
-      div:hover {
+      @font-face {
+        font-family: "STM BenedictoOTF L";
+        src: url("assets/fonts/STM\ Benedicto.otf") format("truetype");
+      }
+      body {
         background-color: #e0e0e0;
-      }
-
-      .square {
-        width: 20px;
-        height: 20px;
-        transform: rotate(45deg);
-        background-color: #00ff32;
-        position: absolute;
-        z-index: 2;
+        font-family: "STM BenedictoOTF L";
       }
     </style>
   </head>
 
   <body>
-    <div class="square"></div>
-
-    <div class="split left">
-      <div class="centered">
-        <h2>projects</h2>
-      </div>
-    </div>
-
-    <div class="split right">
-      <div class="centered">
-        <h2>about</h2>
-      </div>
+    <div class="container">
+      <!-- <div>
+        works of <br />
+        min-gyo park
+      </div> -->
+      <img class="image" src="assets/images/mgplogo.svg" alt="SVG Image" />
+      <div>coming soon</div>
     </div>
   </body>
 </html>
